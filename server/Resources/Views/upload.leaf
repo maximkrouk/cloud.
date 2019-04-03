@@ -1,0 +1,11 @@
+<html>
+<body>
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="document" />
+        <input type="file" name="userID" />
+        <input type="submit" value="Send" />
+    </form>
+
+</body>
+</html>

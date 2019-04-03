@@ -1,0 +1,4 @@
+module CCryptoOpenSSL {
+    umbrella "/Users/mxcat/Desktop/vapor/mxCloudFS/server/.build/checkouts/crypto/Sources/CCryptoOpenSSL/include"
+    export *
+}

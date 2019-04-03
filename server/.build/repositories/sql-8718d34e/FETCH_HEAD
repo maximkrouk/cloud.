@@ -1,0 +1,58 @@
+50eaeb8f52a1ce63f1ff3880e1114dd8757a78a6	not-for-merge	branch '2' of https://github.com/vapor/sql
+54df824af558535572d8ef032d952ca765ca99c0	not-for-merge	branch 'MrMage-patch-1' of https://github.com/vapor/sql
+c7d458a7fbc9102b431988bb9b69c91025bdaf80	not-for-merge	branch 'fluent-gm' of https://github.com/vapor/sql
+7406299af4aaeb79e781581513cb5f2b86290e3d	not-for-merge	branch 'master' of https://github.com/vapor/sql
+ddb68b20c1dafd13ff5777146ee54d8d2162bb3b	not-for-merge	branch 'null-predicate-value' of https://github.com/vapor/sql
+b1a8c033bc002206f256a05c741f7ef4758341ea	not-for-merge	branch 'sql-convenience-1' of https://github.com/vapor/sql
+d67d4116ef63f86f374c7b6e502758bb89ca3a6a	not-for-merge	branch 'subquery-select' of https://github.com/vapor/sql
+a230d5e32c850c0d77e7484bdf518e4029e44efe	not-for-merge	'refs/pull/1/head' of https://github.com/vapor/sql
+51af6668ab46df55a9ae1fe2cf18d5650ee2db8e	not-for-merge	'refs/pull/10/head' of https://github.com/vapor/sql
+8abe4163902628589b21b56057e71caae4b63323	not-for-merge	'refs/pull/10/merge' of https://github.com/vapor/sql
+f5914a3a1b885bf1cb4d18a3b6dcae4a1e22eb14	not-for-merge	'refs/pull/11/head' of https://github.com/vapor/sql
+ef1b0d626b8962c764ccb0f40f9666469d5ce140	not-for-merge	'refs/pull/12/head' of https://github.com/vapor/sql
+43d4dfda8dbd9aa607606d9f3f3bc861fc555938	not-for-merge	'refs/pull/12/merge' of https://github.com/vapor/sql
+4adc8a3cfb29fd49829d276737f2769e081a77e0	not-for-merge	'refs/pull/14/head' of https://github.com/vapor/sql
+424b31a91a00186c95c2b3502db189633be8c81e	not-for-merge	'refs/pull/15/head' of https://github.com/vapor/sql
+33ec4d9fe2a6e16975994d75fd18b83e104bf873	not-for-merge	'refs/pull/16/head' of https://github.com/vapor/sql
+4d0c3affbf9535dc92461f0d65eaf64d702ff80d	not-for-merge	'refs/pull/18/head' of https://github.com/vapor/sql
+b1a8c033bc002206f256a05c741f7ef4758341ea	not-for-merge	'refs/pull/19/head' of https://github.com/vapor/sql
+ee7a68519da0ca141d7a094ad24410a1a4b5a385	not-for-merge	'refs/pull/19/merge' of https://github.com/vapor/sql
+87575cbe35ab9411cc72526b2be838e1293746de	not-for-merge	'refs/pull/20/head' of https://github.com/vapor/sql
+b25bdf644bee4484abe74ac5a1506ae8a4e0e52d	not-for-merge	'refs/pull/20/merge' of https://github.com/vapor/sql
+958af1a0870e8eab0072ab934735972d5ed2667a	not-for-merge	'refs/pull/21/head' of https://github.com/vapor/sql
+d67d4116ef63f86f374c7b6e502758bb89ca3a6a	not-for-merge	'refs/pull/25/head' of https://github.com/vapor/sql
+90543dc6c8ebda8d7c31002ed7d492409b3e4d17	not-for-merge	'refs/pull/25/merge' of https://github.com/vapor/sql
+7bba91812a9028baa903cdc100bac8c45af55377	not-for-merge	'refs/pull/27/head' of https://github.com/vapor/sql
+0a298d28716797a8fdf7aaded2204e0282e136b3	not-for-merge	'refs/pull/3/head' of https://github.com/vapor/sql
+32b285fce06da8f81f17e5f49636802c9b833617	not-for-merge	'refs/pull/3/merge' of https://github.com/vapor/sql
+dfb530efb63715d3bdaeffc81b87b2a07b31eeb3	not-for-merge	'refs/pull/32/head' of https://github.com/vapor/sql
+e2524f89d96a0fc0ecc3be82dfe22d1726048928	not-for-merge	'refs/pull/35/head' of https://github.com/vapor/sql
+7052644b268e750cb918c42d014feecf9616076d	not-for-merge	'refs/pull/39/head' of https://github.com/vapor/sql
+5349ee53eea1219f40ddc4ebbdb444ff56a17a3d	not-for-merge	'refs/pull/43/head' of https://github.com/vapor/sql
+54df824af558535572d8ef032d952ca765ca99c0	not-for-merge	'refs/pull/44/head' of https://github.com/vapor/sql
+1d7760f5744855762d21520b7d2baeb8f77a1758	not-for-merge	'refs/pull/45/head' of https://github.com/vapor/sql
+b184194c55a02c3a007a7c9893fb2a8d030c689d	not-for-merge	'refs/pull/46/head' of https://github.com/vapor/sql
+e7d9afe38b0105006b5e53c9d1a73aeb695c4da5	not-for-merge	'refs/pull/49/head' of https://github.com/vapor/sql
+4480899e8016bfb98f32abd7a2bbf58443f58aad	not-for-merge	'refs/pull/5/head' of https://github.com/vapor/sql
+192b4638112b13234247e8b81d3a8368f8828f2d	not-for-merge	'refs/pull/50/head' of https://github.com/vapor/sql
+5f381eed9f91b0f0378bfe60e33eef7d9282908c	not-for-merge	'refs/pull/53/head' of https://github.com/vapor/sql
+896a6ad15d7fc417ff718ced25459e3a7a3580ac	not-for-merge	'refs/pull/54/head' of https://github.com/vapor/sql
+a1fef3e3ebd8f7eb4886d95841c0d70d35962241	not-for-merge	'refs/pull/55/head' of https://github.com/vapor/sql
+ddb68b20c1dafd13ff5777146ee54d8d2162bb3b	not-for-merge	'refs/pull/6/head' of https://github.com/vapor/sql
+c63d0ffc51194f91c731cf05abe4cd6c27cee21c	not-for-merge	'refs/pull/6/merge' of https://github.com/vapor/sql
+754c49e96ac97f2daf6ad729013a4265aff365d6	not-for-merge	'refs/pull/7/head' of https://github.com/vapor/sql
+c7d458a7fbc9102b431988bb9b69c91025bdaf80	not-for-merge	'refs/pull/8/head' of https://github.com/vapor/sql
+2a47d515a98b24c2cdd968253cd52847ea88945c	not-for-merge	'refs/pull/8/merge' of https://github.com/vapor/sql
+1bb94271d8645b6d6983721080ad642aa35d749c	not-for-merge	tag '1.0.0' of https://github.com/vapor/sql
+3713b4167eaeeb00ad1ca1a5dc5196c28ba3c453	not-for-merge	tag '2.0.0' of https://github.com/vapor/sql
+0a0d247ab45764c39190753690db7d9caeb3b46c	not-for-merge	tag '2.0.0-beta.1' of https://github.com/vapor/sql
+9c8c19bd210b927ee52532d204e255efb11508a4	not-for-merge	tag '2.0.0-beta.1.0.1' of https://github.com/vapor/sql
+5127aaf2eb7e5dec134739df17fc7e565024e416	not-for-merge	tag '2.0.0-beta.2' of https://github.com/vapor/sql
+f89155dbf3dd48c838f79d28a636bbe32ad38693	not-for-merge	tag '2.0.0-beta.3' of https://github.com/vapor/sql
+4da0522ca9e6c4e61389307aff2b5f465a532f30	not-for-merge	tag '2.0.1' of https://github.com/vapor/sql
+bfbaa048f9e655218611b65da470efa7deb16616	not-for-merge	tag '2.0.2' of https://github.com/vapor/sql
+a35cf1dced4ddd32bb2dc8b6e765aea7bcf8d6e0	not-for-merge	tag '2.1.0' of https://github.com/vapor/sql
+839cf96eba296d26151ff1d7a746e9fe35053584	not-for-merge	tag '2.2.0' of https://github.com/vapor/sql
+f77bcae7c95150cdab62095e7bf321ed8c7551bd	not-for-merge	tag '2.3.0' of https://github.com/vapor/sql
+3da3ad1b04e7eac2ae339d8104e5d1167c11ab45	not-for-merge	tag '2.3.1' of https://github.com/vapor/sql
+50eaeb8f52a1ce63f1ff3880e1114dd8757a78a6	not-for-merge	tag '2.3.2' of https://github.com/vapor/sql

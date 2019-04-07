@@ -11,7 +11,7 @@ bab2e39d12b8519e970fd5fac5b065b41798d521	not-for-merge	branch 'fix-decoding-fail
 ebcf3eb231e7ea57f2f11d4f4bb3f54012be4bb9	not-for-merge	branch 'fluent-gm' of https://github.com/vapor/core
 861f6f76b61914a380c68c030727a08d95720b9b	not-for-merge	branch 'future-void' of https://github.com/vapor/core
 95855efa43fa2bce5a9aec02ceb535a325d4edec	not-for-merge	branch 'joannis-performance' of https://github.com/vapor/core
-727ae2905ebdca162c5da5bfe187c406555859e2	not-for-merge	branch 'master' of https://github.com/vapor/core
+02f1d0d0eabe68f10d1efa0decdfa0e6e737e985	not-for-merge	branch 'master' of https://github.com/vapor/core
 989e8127b4e4920cd8203542e6d9b28fc5127630	not-for-merge	branch 'new-reflection-coders' of https://github.com/vapor/core
 cfad3fc77f6cd14febf6f8506297affa75a6178b	not-for-merge	branch 'nio' of https://github.com/vapor/core
 34e21adde8290c074350fb2517bf8b04d25194dc	not-for-merge	branch 'patches' of https://github.com/vapor/core
@@ -112,8 +112,11 @@ bc13a0528bbc28f454c665e29fd3e607b6b3e754	not-for-merge	'refs/pull/191/head' of h
 4d0aba14b6ba1d62e993dfe0852704454e68d3b5	not-for-merge	'refs/pull/196/head' of https://github.com/vapor/core
 afe3cb3d453aa066191e607965a4dcb2528a637f	not-for-merge	'refs/pull/197/head' of https://github.com/vapor/core
 78ec70e821449e5b0e91ad44797c3526be2a00a9	not-for-merge	'refs/pull/198/head' of https://github.com/vapor/core
-f305c50edfde012cb66f852aba6237c814adae4a	not-for-merge	'refs/pull/198/merge' of https://github.com/vapor/core
+e1ce49f50d878a0253ccff9418f62fbb5231b0f3	not-for-merge	'refs/pull/198/merge' of https://github.com/vapor/core
+dbc752a0bc9c55dc74369e35806a9d051c5a2bdf	not-for-merge	'refs/pull/199/head' of https://github.com/vapor/core
 0bf97617657d45b6829ed2af3b2c8518b9eb773a	not-for-merge	'refs/pull/2/head' of https://github.com/vapor/core
+8345cf60b96f807e8d609339df3a076a34a8e1db	not-for-merge	'refs/pull/201/head' of https://github.com/vapor/core
+5f342d34c7ac255cb1c3758329de85f53a51a798	not-for-merge	'refs/pull/202/head' of https://github.com/vapor/core
 77286d0b509a4d37c948894a4733e7aae6834ceb	not-for-merge	'refs/pull/21/head' of https://github.com/vapor/core
 6c20f8723d9e1cb4b557d7d8dae4043d56e4c318	not-for-merge	'refs/pull/22/head' of https://github.com/vapor/core
 987407a6fd6aad68c9eb3a78bb82b299178fb0ac	not-for-merge	'refs/pull/23/head' of https://github.com/vapor/core
@@ -285,4 +288,5 @@ eb876a758733166a4fb20f3f0a17b480c5ea563e	not-for-merge	tag '3.4.3' of https://gi
 7fe113f5e857c690b25960ccd6d9430cd34d038d	not-for-merge	tag '3.7.1' of https://github.com/vapor/core
 cbe38246dca3a4283addd8a120aa9d007f18ddd4	not-for-merge	tag '3.7.2' of https://github.com/vapor/core
 727ae2905ebdca162c5da5bfe187c406555859e2	not-for-merge	tag '3.7.3' of https://github.com/vapor/core
+02f1d0d0eabe68f10d1efa0decdfa0e6e737e985	not-for-merge	tag '3.8.0' of https://github.com/vapor/core
 06ff4d12cf4db04d821fb7fdaee3f431663b3577	not-for-merge	tag 'SR-6922' of https://github.com/vapor/core

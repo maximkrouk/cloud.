@@ -8,7 +8,6 @@ c152fe7cdc7882172fcefdcaa17d7908a8fd72eb refs/heads/HTTPRequest-caching
 0bc59b36dfaf8d001f2ed4d9f9f546b43f74b6b9 refs/heads/httpclient-openssl-error
 e02fb37d07f7dc630997a11673640924e7d0a57c refs/heads/master
 8a9e6503b5b60ad31d7a5da2901e946fe66f1a49 refs/heads/maxsize
-1ee31572485cbb0ffbf42bf4754ee096b8efe215 refs/heads/streaming-multipart
 dfac0fdf63a9e8e8929f47f163bfdb2acca46a21 refs/heads/test-unexpected-close
 7d1ac2824844cfbfd5b185aec5151a35a5374975 refs/heads/testing
 49dfa1da1fadabe92413bafee3bd01d4156a6fdb refs/heads/ts
@@ -235,7 +234,6 @@ a5e84c0f50624fa0bd1ea12c5365f4f78c9e772d refs/pull/351/head
 c252d74e71160c396ef4b439cce15254e49805fd refs/pull/353/head
 84544686878c541a13824aa35b6100fe5104b195 refs/pull/354/head
 1ee31572485cbb0ffbf42bf4754ee096b8efe215 refs/pull/357/head
-5379c2e2cca5d6ae2065276ca44aea7e65805bc2 refs/pull/357/merge
 f22b2fead96ed64378ce3315dd1922b705704601 refs/pull/358/head
 6e93b2e60ada76b5073133a80e3b47365e69245a refs/pull/358/merge
 122a6b8ce745395fdcbba5fbe5206c7dfd15e45f refs/pull/36/head

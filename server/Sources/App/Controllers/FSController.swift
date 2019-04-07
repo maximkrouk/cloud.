@@ -31,6 +31,7 @@ final class FSController {
     
     func download(on req: Request) throws -> Future<FSItem.FileWrapper> {
         let user = try req.requireAuthenticated(User.self)
+        
         return try req.content.decode(FSItem.FileTransfer.self).flatMap(to: FSItem.FileWrapper.self, { transfer in
             return try user.files.query(on: req).all().map(to: FSItem.FileWrapper.self, { items in
                 guard let item = items.filter({ $0.id == transfer.fileID }).first else { throw Abort(.notFound, reason: "Requested file does not exist") }
@@ -87,12 +88,12 @@ final class FSController {
         })
     }
     
-    func list(on req: Request) throws -> Future<[FSItem.FileInfo]> {
+    func list(on req: Request) throws -> Future<FSItem.FileList> {
         let user = try req.requireAuthenticated(User.self)
         
         return try user.files.query(on: req).all().map { files in
             print("Sending filelist to user with id: \(user.id!)")
-            return files.map { FSItem.FileInfo(id: $0.id!, name: $0.file.filename, size: $0.file.data.count) }
+            return FSItem.FileList(files: files.map { FSItem.FileInfo(id: $0.id!, name: $0.file.filename, size: $0.file.data.count) })
         }
     }
     

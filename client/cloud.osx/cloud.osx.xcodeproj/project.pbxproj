@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37687D8B8A1BA5A21E97A36C /* Pods_cloud_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3A1534A0800F78FD34632C /* Pods_cloud_osx.framework */; };
+		D730C88B2255297D000E843A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D730C88A2255297D000E843A /* Assets.xcassets */; };
+		D730C88D22552F15000E843A /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D730C88C22552F15000E843A /* WindowController.swift */; };
+		D730C8912255301A000E843A /* MXJSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D730C8902255301A000E843A /* MXJSONManager.swift */; };
+		D730C894225530A2000E843A /* FSItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D730C893225530A2000E843A /* FSItem.swift */; };
+		D730D21022564591000E843A /* MXJSONManager+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = D730D20F22564591000E843A /* MXJSONManager+Alamofire.swift */; };
+		D730D21522565A6E000E843A /* DropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D730D21422565A6E000E843A /* DropView.swift */; };
+		D730D21B2256825A000E843A /* cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = D730D21A2256825A000E843A /* cloud.swift */; };
+		D733594722578C34005AF577 /* MXFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D733594622578C34005AF577 /* MXFileManager.swift */; };
+		D733594B225804E1005AF577 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D733594A225804E1005AF577 /* AuthViewController.swift */; };
+		D7335BAB225A24A5005AF577 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7335BAA225A24A5005AF577 /* User.swift */; };
+		D7DF3A232255089800106C6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DF3A222255089800106C6E /* AppDelegate.swift */; };
+		D7DF3A252255089800106C6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DF3A242255089800106C6E /* ViewController.swift */; };
+		D7DF3A2A2255089900106C6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DF3A282255089900106C6E /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A3A1534A0800F78FD34632C /* Pods_cloud_osx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cloud_osx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B8C4463C4CC06BB80DAFB20 /* Pods-cloud.osx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cloud.osx.release.xcconfig"; path = "Pods/Target Support Files/Pods-cloud.osx/Pods-cloud.osx.release.xcconfig"; sourceTree = "<group>"; };
+		CF4776E94FF6488C546E16E9 /* Pods-cloud.osx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cloud.osx.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cloud.osx/Pods-cloud.osx.debug.xcconfig"; sourceTree = "<group>"; };
+		D730C88A2255297D000E843A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D730C88C22552F15000E843A /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		D730C8902255301A000E843A /* MXJSONManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXJSONManager.swift; sourceTree = "<group>"; };
+		D730C893225530A2000E843A /* FSItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSItem.swift; sourceTree = "<group>"; };
+		D730C89522553746000E843A /* cloud.osx.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = cloud.osx.entitlements; sourceTree = "<group>"; };
+		D730D20F22564591000E843A /* MXJSONManager+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MXJSONManager+Alamofire.swift"; sourceTree = "<group>"; };
+		D730D21422565A6E000E843A /* DropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropView.swift; sourceTree = "<group>"; };
+		D730D21A2256825A000E843A /* cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cloud.swift; sourceTree = "<group>"; };
+		D733594622578C34005AF577 /* MXFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXFileManager.swift; sourceTree = "<group>"; };
+		D733594A225804E1005AF577 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		D7335BAA225A24A5005AF577 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D7DF3A1F2255089800106C6E /* cloud.osx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cloud.osx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7DF3A222255089800106C6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D7DF3A242255089800106C6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D7DF3A292255089900106C6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7DF3A2B2255089900106C6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7DF3A2C2255089900106C6E /* cloud_osx.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = cloud_osx.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7DF3A1C2255089800106C6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37687D8B8A1BA5A21E97A36C /* Pods_cloud_osx.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		292D95008320E9F051C1F4B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF4776E94FF6488C546E16E9 /* Pods-cloud.osx.debug.xcconfig */,
+				1B8C4463C4CC06BB80DAFB20 /* Pods-cloud.osx.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4A31A3FD745F0E7507058FCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A3A1534A0800F78FD34632C /* Pods_cloud_osx.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D730C8922255308E000E843A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D7335BAA225A24A5005AF577 /* User.swift */,
+				D730C893225530A2000E843A /* FSItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D730D20E22564570000E843A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D730D20F22564591000E843A /* MXJSONManager+Alamofire.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D730D211225655CB000E843A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF3A282255089900106C6E /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D730D212225655DF000E843A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D733594622578C34005AF577 /* MXFileManager.swift */,
+				D730C8902255301A000E843A /* MXJSONManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		D730D213225655F3000E843A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D733594A225804E1005AF577 /* AuthViewController.swift */,
+				D7DF3A242255089800106C6E /* ViewController.swift */,
+				D730C88C22552F15000E843A /* WindowController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D730D21622565A71000E843A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D730D21422565A6E000E843A /* DropView.swift */,
+				D730D211225655CB000E843A /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D730D2192256823B000E843A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D730D21A2256825A000E843A /* cloud.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D7DF3A162255089800106C6E = {
+			isa = PBXGroup;
+			children = (
+				D7DF3A212255089800106C6E /* cloud.osx */,
+				D7DF3A202255089800106C6E /* Products */,
+				292D95008320E9F051C1F4B1 /* Pods */,
+				4A31A3FD745F0E7507058FCC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D7DF3A202255089800106C6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF3A1F2255089800106C6E /* cloud.osx.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7DF3A212255089800106C6E /* cloud.osx */ = {
+			isa = PBXGroup;
+			children = (
+				D730C88A2255297D000E843A /* Assets.xcassets */,
+				D730D2192256823B000E843A /* Networking */,
+				D730D20E22564570000E843A /* Extensions */,
+				D730D212225655DF000E843A /* Managers */,
+				D730C8922255308E000E843A /* Models */,
+				D730D21622565A71000E843A /* Views */,
+				D730D213225655F3000E843A /* Controllers */,
+				D7DF3A222255089800106C6E /* AppDelegate.swift */,
+				D7DF3A2B2255089900106C6E /* Info.plist */,
+				D730C89522553746000E843A /* cloud.osx.entitlements */,
+				D7DF3A2C2255089900106C6E /* cloud_osx.entitlements */,
+			);
+			path = cloud.osx;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7DF3A1E2255089800106C6E /* cloud.osx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7DF3A2F2255089900106C6E /* Build configuration list for PBXNativeTarget "cloud.osx" */;
+			buildPhases = (
+				B465E6F4C0E2D08EE8C0DD42 /* [CP] Check Pods Manifest.lock */,
+				D7DF3A1B2255089800106C6E /* Sources */,
+				D7DF3A1C2255089800106C6E /* Frameworks */,
+				D7DF3A1D2255089800106C6E /* Resources */,
+				F7E888F0B8EAA2BE03278F5B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cloud.osx;
+			productName = cloud.osx;
+			productReference = D7DF3A1F2255089800106C6E /* cloud.osx.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7DF3A172255089800106C6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = mxCat;
+				TargetAttributes = {
+					D7DF3A1E2255089800106C6E = {
+						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = D7DF3A1A2255089800106C6E /* Build configuration list for PBXProject "cloud.osx" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7DF3A162255089800106C6E;
+			productRefGroup = D7DF3A202255089800106C6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7DF3A1E2255089800106C6E /* cloud.osx */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7DF3A1D2255089800106C6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D730C88B2255297D000E843A /* Assets.xcassets in Resources */,
+				D7DF3A2A2255089900106C6E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B465E6F4C0E2D08EE8C0DD42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cloud.osx-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7E888F0B8EAA2BE03278F5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-cloud.osx/Pods-cloud.osx-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cloud.osx/Pods-cloud.osx-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7DF3A1B2255089800106C6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D730C8912255301A000E843A /* MXJSONManager.swift in Sources */,
+				D730C894225530A2000E843A /* FSItem.swift in Sources */,
+				D733594B225804E1005AF577 /* AuthViewController.swift in Sources */,
+				D733594722578C34005AF577 /* MXFileManager.swift in Sources */,
+				D730D21022564591000E843A /* MXJSONManager+Alamofire.swift in Sources */,
+				D730D21522565A6E000E843A /* DropView.swift in Sources */,
+				D7DF3A252255089800106C6E /* ViewController.swift in Sources */,
+				D730D21B2256825A000E843A /* cloud.swift in Sources */,
+				D730C88D22552F15000E843A /* WindowController.swift in Sources */,
+				D7DF3A232255089800106C6E /* AppDelegate.swift in Sources */,
+				D7335BAB225A24A5005AF577 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D7DF3A282255089900106C6E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7DF3A292255089900106C6E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7DF3A2D2255089900106C6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D7DF3A2E2255089900106C6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D7DF3A302255089900106C6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF4776E94FF6488C546E16E9 /* Pods-cloud.osx.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = cloud.osx/cloud.osx.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7Z79P5G4PB;
+				INFOPLIST_FILE = cloud.osx/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mxCat.cloud-osx";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D7DF3A312255089900106C6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B8C4463C4CC06BB80DAFB20 /* Pods-cloud.osx.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = cloud.osx/cloud.osx.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7Z79P5G4PB;
+				INFOPLIST_FILE = cloud.osx/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mxCat.cloud-osx";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7DF3A1A2255089800106C6E /* Build configuration list for PBXProject "cloud.osx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7DF3A2D2255089900106C6E /* Debug */,
+				D7DF3A2E2255089900106C6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7DF3A2F2255089900106C6E /* Build configuration list for PBXNativeTarget "cloud.osx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7DF3A302255089900106C6E /* Debug */,
+				D7DF3A312255089900106C6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7DF3A172255089800106C6E /* Project object */;
+}

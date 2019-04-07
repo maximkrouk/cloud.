@@ -1,0 +1,3 @@
+# Distribution / packaging
+server/.build/*
+server/sqlite.db

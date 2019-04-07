@@ -1,6 +1,5 @@
 # pack-refs with: peeled fully-peeled sorted 
 d45d549719a19efc98bb281da042aaa5af8224e6 refs/heads/gh-pages
-326cfe84c9b14d43982d47fb8b8301cf33a907c1 refs/heads/jw-update-readme-s5
 8e59048aaff174b65c64ed27f4f79f8663058498 refs/heads/master
 2c3ef591bc18737f6fcc9d209ad632815e47b91e refs/heads/nio-1.0
 82bc6db2317122c24c9b245b4831e0abba49fa65 refs/heads/nio-1.1
@@ -710,9 +709,7 @@ f4fdc862c8148c8ceafd5c9cdcc2686bbcb70cdf refs/pull/93/head
 65f1094f6be5cac6031908fefa398251aefcb9f2 refs/pull/932/head
 755bbbfbf0fa109e9f98bed37c4357465002634d refs/pull/933/head
 ff35b9e060a6087f2235b95573f1a1c64d2fc441 refs/pull/937/head
-5b79d60c4961aa635e8c1d3071916952e012dadd refs/pull/937/merge
 326cfe84c9b14d43982d47fb8b8301cf33a907c1 refs/pull/938/head
-97afb1f50958b292032523750f72e9022e369ec2 refs/pull/938/merge
 4560c14d3c9f6a59186ed252c6aee7f0f3e56b1d refs/pull/94/head
 c3df9421788f0d030eef32a0a667ee5feb542a6a refs/pull/95/head
 78adc8ef32115ded9a147d71748f5cf3217ba616 refs/pull/95/merge

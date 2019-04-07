@@ -4,11 +4,11 @@ ecdf576d3ab34000709b2d0b429279a269fa1b62	not-for-merge	branch 'PublicConsoleText
 055ea317a85dd6587fe0742b0dcb3aa1dff7c6d1	not-for-merge	branch 'command-is-strict' of https://github.com/vapor/console
 63f28db8a519f86b5be19ca666bdf0f659cb1c06	not-for-merge	branch 'example-app' of https://github.com/vapor/console
 3b3f4d317d9f01d38691b88c812352f20a11e20e	not-for-merge	branch 'logging' of https://github.com/vapor/console
-daddd63efd51015934cbbe10fbcc650999cf9796	not-for-merge	branch 'master' of https://github.com/vapor/console
+7b21566be3a907fc9083d6675db59666d22fb6d2	not-for-merge	branch 'master' of https://github.com/vapor/console
 b42e71956d80ac94ad9423447335d7ed0758f849	not-for-merge	branch 'nio' of https://github.com/vapor/console
 4d65140df10eb480176986539994de22a175210a	not-for-merge	branch 'optional-argument' of https://github.com/vapor/console
 410810de3434d3878aca7f2d06810f9fb5c33edf	not-for-merge	branch 'sandbox' of https://github.com/vapor/console
-a2b9d51f018217509378feeae1ca803f4b0a4d92	not-for-merge	branch 'type-safe-input' of https://github.com/vapor/console
+7e8955dca14a7d07ad6e7be03a455ca4e16ea747	not-for-merge	branch 'type-safe-input' of https://github.com/vapor/console
 28df75da5749f60fdb52b256159af2b21cc8dbe5	not-for-merge	branch 'vapor-2' of https://github.com/vapor/console
 4e64182afa85200bedd718edb1fd656c7d949fa5	not-for-merge	'refs/pull/1/head' of https://github.com/vapor/console
 aeb207cef8cfce619ba9a36150cacba2fca8ff15	not-for-merge	'refs/pull/11/head' of https://github.com/vapor/console
@@ -86,12 +86,14 @@ feeee9832a7b55adeabd4c97b34a108e006b684a	not-for-merge	'refs/pull/82/merge' of h
 ed2b24e240d9746d15d3864518fed4ef4003ee93	not-for-merge	'refs/pull/86/head' of https://github.com/vapor/console
 63f28db8a519f86b5be19ca666bdf0f659cb1c06	not-for-merge	'refs/pull/88/head' of https://github.com/vapor/console
 c9fffff142fa592d788ebccc33defb6efcd57450	not-for-merge	'refs/pull/9/head' of https://github.com/vapor/console
-a2b9d51f018217509378feeae1ca803f4b0a4d92	not-for-merge	'refs/pull/92/head' of https://github.com/vapor/console
-1712d7933e025e08b929ee7a569fcae18ca74190	not-for-merge	'refs/pull/92/merge' of https://github.com/vapor/console
+7e8955dca14a7d07ad6e7be03a455ca4e16ea747	not-for-merge	'refs/pull/92/head' of https://github.com/vapor/console
+e4cf49338f5e8c6589f30d47ca1a5f8dab7c81af	not-for-merge	'refs/pull/92/merge' of https://github.com/vapor/console
 2f1ac55e47d7a0e0fe35fda84df750031dbdece6	not-for-merge	'refs/pull/93/head' of https://github.com/vapor/console
 1ce7a038f5b2cde3831c3858ac3f7c1697b97777	not-for-merge	'refs/pull/94/head' of https://github.com/vapor/console
 3b3f4d317d9f01d38691b88c812352f20a11e20e	not-for-merge	'refs/pull/95/head' of https://github.com/vapor/console
 c1a83cbe82339f5a4ba8cd6c8f3dc13a1648fae9	not-for-merge	'refs/pull/95/merge' of https://github.com/vapor/console
+6bb8e6db06cd3bd0ab352e2bd06d4f2cb371fde6	not-for-merge	'refs/pull/96/head' of https://github.com/vapor/console
+773db283eea8c130f465887cbe220460aebc67b5	not-for-merge	'refs/pull/97/head' of https://github.com/vapor/console
 cc18de232eeb78aa9483fbfc02f995b5c6bf3039	not-for-merge	tag '0.0.0' of https://github.com/vapor/console
 e93e33917ca62750ba2ad67045730c005b5dd0e2	not-for-merge	tag '0.1.0' of https://github.com/vapor/console
 f696017dbbcc71d373dee01f802f38972f964ca7	not-for-merge	tag '0.1.1' of https://github.com/vapor/console

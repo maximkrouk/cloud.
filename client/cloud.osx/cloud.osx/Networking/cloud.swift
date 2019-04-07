@@ -73,20 +73,22 @@ extension Cloud {
             "username": username,
             "password": password
         ]
-        AF.request("\(baseUrl)/auth/register", method: .post, parameters: body, encoding: JSONEncoding.default, headers: [Headers.jsonFormData]).responseJSON { response in
-            
-            if completion != nil {
-                handleAuthResponse(password, response, completion!)
-            }
+        AF.request("\(baseUrl)/auth/register",
+            method: .post,
+            parameters: body,
+            encoding: JSONEncoding.default,
+            headers: [Headers.jsonFormData]
+        ).responseJSON { response in
+            handleAuthResponse(password, response, completion)
         }
     }
     
     static func login(username: String, password: String, completion: ((User.Shared?, String?) -> Void)?) {
-        AF.request("\(baseUrl)/auth/login", method: .post, headers: [Headers.basicAuth(username: username, password: password), Headers.jsonFormData]).responseJSON { response in
-            
-            if completion != nil {
-                handleAuthResponse(password, response, completion!)
-            }
+        AF.request("\(baseUrl)/auth/login",
+            method: .post,
+            headers: [Headers.basicAuth(username: username, password: password), Headers.jsonFormData]
+        ).responseJSON { response in
+            handleAuthResponse(password, response, completion)
         }
     }
     
@@ -94,19 +96,19 @@ extension Cloud {
         authenticatedUser = nil
     }
     
-    private static func handleAuthResponse(_ password: String, _ response: DataResponse<Any>, _ completion: (User.Shared?, String?) -> Void) {
+    private static func handleAuthResponse(_ password: String, _ response: DataResponse<Any>, _ completion: ((User.Shared?, String?) -> Void)?) {
         guard let data = response.data else { return }
         if let error = handleAutorizationError(data: data) {
-            completion(nil, error)
+            completion?(nil, error)
             return
         }
         do {
             let decoder = JSONDecoder()
             let userShared = try decoder.decode(User.Shared.self, from: data)
             authenticatedUser = User(shared: userShared, password: password)
-            completion(userShared, nil)
+            completion?(userShared, nil)
         } catch {
-            completion(nil, error.localizedDescription)
+            completion?(nil, error.localizedDescription)
         }
     }
     
@@ -165,37 +167,51 @@ extension Cloud {
             parameters: body,
             encoding: JSONEncoding.default,
             headers: headers
-            ).responseJSON { (response) in
-                if let data = response.data {
-                    // Response validation
-                    if let statusCode = response.response?.statusCode {
-                        if !(200..<300).contains(statusCode) {
-                            print("Server responded with an error code: \(statusCode)")
-                            print("Response data:\"\(String(data: response.data!, encoding: .utf8) ?? "#no_response_data")\"")
-                            return
-                        }
+        ).responseJSON { (response) in
+            if let data = response.data {
+                // Response validation
+                if let statusCode = response.response?.statusCode {
+                    if !(200..<300).contains(statusCode) {
+                        print("Server responded with an error code: \(statusCode)")
+                        print("Response data:\"\(String(data: response.data!, encoding: .utf8) ?? "#no_response_data")\"")
+                        return
                     }
-                    
-                    do {
-                        let data = try JSONDecoder().decode(FileWrapper.self, from: data).document.data
-                        
-                        guard let url = URL(string: path)?.appendingPathComponent(file.name) else {
-                            print("\(path) is not a valid path")
-                            return
-                        }
-                        FileManager.default.createFile(atPath: MXFileManager.pickFilename(for: url), contents: data, attributes: nil)
-                        
-                    } catch {
-                        print(error)
-                    }
-                    
-                    if completion != nil { completion!(response) }
                 }
+                
+                do {
+                    let data = try JSONDecoder().decode(FileWrapper.self, from: data).document.data
+                    guard let url = url?.appendingPathComponent(file.name) else { return }
+                    FileManager.default.createFile(atPath: MXFileManager.pickFilename(for: url), contents: data, attributes: nil)
+                        
+                } catch {
+                    print(error)
+                }
+                    
+                completion?(response)
+            }
         }
     }
     
-    static func delete() {
-        print("Deletion")
+    static func delete(file: FileInfo, completion: ((String?) -> Void)?) {
+        let headers = HTTPHeaders([Headers.basicAuth(for: authenticatedUser), Headers.jsonFormData])
+        let body: [String : Any] = [
+            "fileID": file.id.uuidString
+        ]
+        AF.request("\(baseUrl)/delete",
+            method: .delete,
+            parameters: body,
+            encoding: JSONEncoding.default,
+            headers: headers
+        ).responseJSON { response in
+            if let data = response.data {
+                if let error = handleAutorizationError(data: data) {
+                    completion?(error)
+                    return
+                }
+            }
+            completion?(nil)
+        }
+
     }
     
     static func duplicate() {
@@ -212,7 +228,10 @@ extension Cloud {
     
     static func list(completion: @escaping (FileList?, String?) -> Void) {
         
-        AF.request("\(baseUrl)/list", method: .get, headers: [Headers.basicAuth(for: authenticatedUser), Headers.jsonFormData]).responseJSON { (response) in
+        AF.request("\(baseUrl)/list",
+            method: .get,
+            headers: [Headers.basicAuth(for: authenticatedUser), Headers.jsonFormData]
+        ).responseJSON { (response) in
             guard let data = response.data else { return }
             if let error = handleAutorizationError(data: data){
                 completion(nil, error)

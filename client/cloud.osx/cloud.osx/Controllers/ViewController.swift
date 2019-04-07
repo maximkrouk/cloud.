@@ -40,9 +40,11 @@ class ViewController: NSViewController {
     }
     
     deinit {
-        NotificationCenter.default.removeObserver(self,name: Notification.Name(rawValue: "DropViewDraggingEntered"), object: dropView)
+        NotificationCenter.default.removeObserver(self, name: Notification.Name(rawValue: "DropViewDraggingEntered"), object: dropView)
         NotificationCenter.default.removeObserver(self, name: Notification.Name(rawValue: "DropViewDraggingExited"), object: dropView)
         NotificationCenter.default.removeObserver(self, name: Notification.Name(rawValue: "DropViewDraggingEnded"), object: dropView)
+        NotificationCenter.default.removeObserver(self, name: Notification.Name(rawValue: "UserDidAuthenticated"), object: nil)
+        NotificationCenter.default.removeObserver(self, name: Notification.Name(rawValue: "UserDidDeauthenticated"), object: nil)
     }
 }
 
@@ -82,7 +84,7 @@ extension ViewController {
         item.keyEquivalentModifierMask = NSEvent.ModifierFlags.control
         menuItems.append(item)
         
-        item = NSMenuItem(title: "Delete", action: nil, keyEquivalent: "d")
+        item = NSMenuItem(title: "Delete", action: #selector(handleDelete), keyEquivalent: "d")
         item.keyEquivalentModifierMask = NSEvent.ModifierFlags.option
         menuItems.append(item)
         
@@ -210,8 +212,14 @@ extension ViewController {
         }
     }
     
-    @objc func handleDownload(filePosition: Int) {
+    @objc func handleDownload() {
         Cloud.download(file: fileList.files[tableView.selectedRow]) { _ in  }
+    }
+    
+    @objc func handleDelete() {
+        Cloud.delete(file: fileList.files[tableView.selectedRow]) { error in
+            self.loadFileList()
+        }
     }
     
     @objc func handleTableViewDoubleAction(_ sender:AnyObject) {

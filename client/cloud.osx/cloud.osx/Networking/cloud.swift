@@ -218,8 +218,26 @@ extension Cloud {
         print("Duplication")
     }
     
-    static func send() {
+    static func send(using transfer: FileTransfer, completion: ((String?) -> Void)?) {
         print("Send")
+        let headers = HTTPHeaders([Headers.basicAuth(for: authenticatedUser), Headers.jsonFormData])
+        let body: [String: Any] = [
+            "fileID" : transfer.fileID.uuidString,
+            "userID" : transfer.userID.uuidString
+        ]
+        AF.request("\(baseUrl)/send",
+            method: .post,
+            parameters: body,
+            encoding: JSONEncoding.default,
+            headers: headers
+        ).responseJSON { response in
+            guard let data = response.data else { return }
+            if let error = handleAutorizationError(data: data){
+                completion?(error)
+                return
+            }
+            completion?(nil)
+        }
     }
     
     static func move() {

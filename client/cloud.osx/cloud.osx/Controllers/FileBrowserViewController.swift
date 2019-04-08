@@ -10,7 +10,7 @@ import Cocoa
 import Alamofire
 
 // MARK: - Init
-class ViewController: NSViewController {
+class FileBrowserViewController: NSViewController {
     
     var fileList: FileList = FileList(files: [FileInfo]()) {
         didSet {
@@ -49,7 +49,7 @@ class ViewController: NSViewController {
 }
 
 // MARK: - Setup
-extension ViewController {
+extension FileBrowserViewController {
     
     private func setupTableView() {
         tableView.delegate = self
@@ -76,7 +76,7 @@ extension ViewController {
         item.keyEquivalentModifierMask = NSEvent.ModifierFlags.control
         menuItems.append(item)
         
-        item = NSMenuItem(title: "Send", action: nil, keyEquivalent: "s")
+        item = NSMenuItem(title: "Send", action: #selector(handleSend), keyEquivalent: "s")
         item.keyEquivalentModifierMask = NSEvent.ModifierFlags.option
         menuItems.append(item)
         
@@ -116,7 +116,7 @@ extension ViewController {
 }
 
 // MARK: - NSTableViewDataSource
-extension ViewController: NSTableViewDataSource {
+extension FileBrowserViewController: NSTableViewDataSource {
     
     func numberOfRows(in tableView: NSTableView) -> Int {
         return fileList.files.count
@@ -125,7 +125,7 @@ extension ViewController: NSTableViewDataSource {
 }
 
 // MARK: - NSTableViewDelegate
-extension ViewController: NSTableViewDelegate {
+extension FileBrowserViewController: NSTableViewDelegate {
     
     fileprivate enum CellIdentifiers {
         static let NameCell = "NameCellID"
@@ -172,7 +172,7 @@ extension ViewController: NSTableViewDelegate {
 }
 
 // MARK: - Handlers
-extension ViewController {
+extension FileBrowserViewController {
     
     @objc func loadFileList() {
         Cloud.list { fileList, error in
@@ -213,13 +213,20 @@ extension ViewController {
     }
     
     @objc func handleDownload() {
+        guard tableView.selectedRow >= 0 else { return }
         Cloud.download(file: fileList.files[tableView.selectedRow]) { _ in  }
     }
     
     @objc func handleDelete() {
+        guard tableView.selectedRow >= 0 else { return }
         Cloud.delete(file: fileList.files[tableView.selectedRow]) { error in
             self.loadFileList()
         }
+    }
+    
+    @objc func handleSend() {
+        guard tableView.selectedRow >= 0 else { return }
+        performSegue(withIdentifier: "FileBrowserToSendFileVC", sender: fileList.files[tableView.selectedRow])
     }
     
     @objc func handleTableViewDoubleAction(_ sender:AnyObject) {
@@ -231,4 +238,11 @@ extension ViewController {
         print(item)
     }
 
+    override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
+        if let file = sender as? FileInfo {
+            if let destination = segue.destinationController as? SendFileViewController {
+                destination.file = file
+            }
+        }
+    }
 }

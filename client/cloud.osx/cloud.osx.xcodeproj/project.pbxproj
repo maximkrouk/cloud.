@@ -18,8 +18,9 @@
 		D733594722578C34005AF577 /* MXFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D733594622578C34005AF577 /* MXFileManager.swift */; };
 		D733594B225804E1005AF577 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D733594A225804E1005AF577 /* AuthViewController.swift */; };
 		D7335BAB225A24A5005AF577 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7335BAA225A24A5005AF577 /* User.swift */; };
+		D7335BB3225BD1DD005AF577 /* SendFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7335BB1225BD1DD005AF577 /* SendFileViewController.swift */; };
+		D7335BB7225BD2FB005AF577 /* FileBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7335BB5225BD2FB005AF577 /* FileBrowserViewController.swift */; };
 		D7DF3A232255089800106C6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DF3A222255089800106C6E /* AppDelegate.swift */; };
-		D7DF3A252255089800106C6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DF3A242255089800106C6E /* ViewController.swift */; };
 		D7DF3A2A2255089900106C6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DF3A282255089900106C6E /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -38,9 +39,10 @@
 		D733594622578C34005AF577 /* MXFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXFileManager.swift; sourceTree = "<group>"; };
 		D733594A225804E1005AF577 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		D7335BAA225A24A5005AF577 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D7335BB1225BD1DD005AF577 /* SendFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendFileViewController.swift; sourceTree = "<group>"; };
+		D7335BB5225BD2FB005AF577 /* FileBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileBrowserViewController.swift; sourceTree = "<group>"; };
 		D7DF3A1F2255089800106C6E /* cloud.osx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cloud.osx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DF3A222255089800106C6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D7DF3A242255089800106C6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D7DF3A292255089900106C6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7DF3A2B2255089900106C6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7DF3A2C2255089900106C6E /* cloud_osx.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = cloud_osx.entitlements; sourceTree = "<group>"; };
@@ -113,7 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				D733594A225804E1005AF577 /* AuthViewController.swift */,
-				D7DF3A242255089800106C6E /* ViewController.swift */,
+				D7335BB5225BD2FB005AF577 /* FileBrowserViewController.swift */,
+				D7335BB1225BD1DD005AF577 /* SendFileViewController.swift */,
 				D730C88C22552F15000E843A /* WindowController.swift */,
 			);
 			path = Controllers;
@@ -297,12 +300,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D730C8912255301A000E843A /* MXJSONManager.swift in Sources */,
+				D7335BB7225BD2FB005AF577 /* FileBrowserViewController.swift in Sources */,
 				D730C894225530A2000E843A /* FSItem.swift in Sources */,
 				D733594B225804E1005AF577 /* AuthViewController.swift in Sources */,
 				D733594722578C34005AF577 /* MXFileManager.swift in Sources */,
+				D7335BB3225BD1DD005AF577 /* SendFileViewController.swift in Sources */,
 				D730D21022564591000E843A /* MXJSONManager+Alamofire.swift in Sources */,
 				D730D21522565A6E000E843A /* DropView.swift in Sources */,
-				D7DF3A252255089800106C6E /* ViewController.swift in Sources */,
 				D730D21B2256825A000E843A /* cloud.swift in Sources */,
 				D730C88D22552F15000E843A /* WindowController.swift in Sources */,
 				D7DF3A232255089800106C6E /* AppDelegate.swift in Sources */,

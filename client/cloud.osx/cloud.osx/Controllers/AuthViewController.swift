@@ -47,11 +47,21 @@ class AuthViewController: NSViewController {
     
     @IBOutlet weak var viewHeightConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var passwordConfirmWrapperLeadingConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var additionalViewsWrapperHeightConstraint: NSLayoutConstraint!
+    
     @IBOutlet weak var usernameTextField: NSTextField!
     @IBOutlet weak var passwordTextField: NSSecureTextField!
     @IBOutlet weak var passwordConfirmTextField: NSSecureTextField!
+    @IBOutlet weak var identifierTextField: NSTextField!
+    @IBOutlet weak var messageTextField: NSTextField!
     @IBOutlet weak var suggestionButton: NSButton!
     @IBOutlet weak var authButton: NSButton!
+    @IBOutlet weak var passwordConfirmWrapper: NSView!
+    @IBOutlet weak var identifierTextFieldWrapper: NSView!
+    @IBOutlet weak var identifierLabel: NSTextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,9 +84,50 @@ class AuthViewController: NSViewController {
     
     func setupViewForAuth() {
         authButton.title = state.rawValue
-        suggestionButton.title = state.suggestion
-        passwordConfirmTextField.isHidden = state != .register
-        viewHeightConstraint.constant = state != .register ? 150 : 180
+        suggestionButton.title = state.suggestion        
+        
+        usernameTextField.isEditable = true
+        passwordTextField.isEditable = true
+    
+        passwordConfirmWrapperLeadingConstraint.constant = 0
+        additionalViewsWrapperHeightConstraint.constant = 30
+        identifierTextFieldWrapper.alphaValue = 1
+        if self.state != .login {
+            self.viewHeightConstraint.constant = 180
+        }
+        
+        switch state {
+        case .login:
+            identifierTextFieldWrapper.alphaValue = 0
+            additionalViewsWrapperHeightConstraint.constant = 0
+            passwordConfirmWrapperLeadingConstraint.constant = 360
+        case .logout:
+            usernameTextField.isEditable = false
+            passwordTextField.isEditable = false
+            identifierTextField.stringValue = Cloud.authenticatedUser?.shared.id.uuidString ?? ""
+            passwordConfirmWrapperLeadingConstraint.constant = -360
+        case .report:
+            usernameTextField.isEditable = false
+            passwordTextField.isEditable = false
+            messageTextField.isEditable = true
+            messageTextField.placeholderString = "Enter your message"
+            passwordConfirmWrapperLeadingConstraint.constant = -720
+        default:
+            break
+        }
+        
+        NSAnimationContext.runAnimationGroup({context in
+            context.duration = 0.4
+            context.allowsImplicitAnimation = true
+
+            self.view.layoutSubtreeIfNeeded()
+            
+        }, completionHandler: {
+            if self.state == .login {
+                self.viewHeightConstraint.constant = 150
+            }
+        })
+        
     }
     
     @IBAction func auth(_ sender: Any) {
@@ -153,7 +204,10 @@ class AuthViewController: NSViewController {
             print(state.rawValue)
             Cloud.post(message: "Report")
             state = .logout
+            
+            setupViewForAuth()
         }
+        
         
     }
     

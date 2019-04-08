@@ -19,7 +19,7 @@ struct FileWrapper: Codable {
 
 struct FileTransfer: Codable {
     let fileID: UUID
-    let userID: UUID?
+    let userID: UUID
 }
 
 struct FileList: Codable {

@@ -30,6 +30,8 @@ public func routes(_ router: Router) throws {
     
     authedGroup.delete("delete", use: fileController.delete)
     
+    authedGroup.post("send", use: fileController.send)
+    
     authedGroup.get("list", use: fileController.list)
     
 }

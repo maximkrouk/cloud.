@@ -52,7 +52,7 @@ final class FSController {
         })
     }
     
-    func copy(on req: Request) throws -> Future<HTTPResponseStatus> {
+    func duplicate(on req: Request) throws -> Future<HTTPResponseStatus> {
         let user = try req.requireAuthenticated(User.self)
         
         return try req.content.decode(FSItem.FileTransfer.self).flatMap(to: HTTPResponseStatus.self, { transfer in
@@ -66,7 +66,7 @@ final class FSController {
         })
     }
     
-    func move(on req: Request) throws -> Future<HTTPResponseStatus> {
+    func send(on req: Request) throws -> Future<HTTPResponseStatus> {
         let user = try req.requireAuthenticated(User.self)
         
         return try req.content.decode(FSItem.FileTransfer.self).flatMap(to: HTTPResponseStatus.self, { transfer in
@@ -76,9 +76,7 @@ final class FSController {
                 return User.find(transfer.userID!, on: req).unwrap(or: Abort(.notFound, reason: "Destination user does not exist")).flatMap(to: HTTPResponseStatus.self, { destinationUser in
                     let file = FSItem(file: item.file, userID: destinationUser.id!)
                     
-                    item.delete(on: req)
-                    
-                    print("File \"\(item.file.filename)\" of size: (\(item.file.data.count) bytes) and user with id: \(item.userID) copied")
+                    print("File \"\(item.file.filename)\" of size: (\(item.file.data.count) bytes) and user with id: \(item.userID) sended to user with id: \(destinationUser.id!)")
                     return file.save(on: req).transform(to: HTTPResponseStatus.ok)
                 })
                 

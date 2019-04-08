@@ -33,6 +33,18 @@ final class UserController {
         let user = try req.requireAuthenticated(User.self)
         return try User.AuthenticatedUser(id: user.requireID(), username: user.username)
     }
+    
+    func destroy(on req: Request) throws -> Future<HTTPResponseStatus> {
+        let user = try req.requireAuthenticated(User.self)
+        return try user.files.query(on: req).all().flatMap(to: HTTPResponseStatus.self, { items in
+            for item in items {
+                item.delete(on: req)
+            }
+            print("Account of user with id: \(String(describing: user.id)) has been destroyed")
+            return user.delete(on: req).transform(to: HTTPResponseStatus.ok)
+        })
+    }
+    
 }
 
 extension UserController {

@@ -79,9 +79,6 @@ final class FSController {
                     print("File \"\(item.file.filename)\" of size: (\(item.file.data.count) bytes) and user with id: \(item.userID) sended to user with id: \(destinationUser.id!)")
                     return file.save(on: req).transform(to: HTTPResponseStatus.ok)
                 })
-                
-                
-                
             })
         })
     }

@@ -1,2 +1,2 @@
-# mxCloudFS
+# cloud.
 Cloud file storage service
